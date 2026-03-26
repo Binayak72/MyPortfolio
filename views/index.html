@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binayak Kumar Mahato — Cloud & DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Background Grid -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">BKM<span class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-badge"><span class="dot"></span> Available for opportunities</div>
+    <h1 class="hero-name">
+      <span class="reveal-line">Binayak</span>
+      <span class="reveal-line delay-1">Kumar</span>
+      <span class="reveal-line delay-2 accent-text">Mahato</span>
+    </h1>
+    <div class="hero-title">
+      <span class="typed-text" id="typedText"></span><span class="type-cursor">|</span>
+    </div>
+    <p class="hero-desc reveal-up">
+      Cloud & DevOps Engineer crafting resilient infrastructure on AWS & Hetzner.
+      Linux systems, CI/CD automation, and mission-critical hosting—built to last.
+    </p>
+    <div class="hero-actions reveal-up delay-3">
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+      <a href="#experience" class="btn-ghost">View Work</a>
+    </div>
+    <div class="hero-meta reveal-up delay-4">
+      <div class="meta-item"><span class="meta-icon">📍</span> Kathmandu, Nepal</div>
+      <div class="meta-item"><span class="meta-icon">🎓</span> B.E. IT — Chandigarh University</div>
+      <div class="meta-item"><span class="meta-icon">📄</span> 3 Publications</div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">// 01 &nbsp; About</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-heading">Root-cause driven.<br>Infrastructure obsessed.</h2>
+          <p>I'm a Cloud and DevOps Engineer with hands-on production experience spanning cloud infrastructure, Linux system administration, hosting platforms, and enterprise IT. I specialize in designing, deploying, securing, and maintaining AWS- and Hetzner-based VPS and dedicated servers.</p>
+          <p>From WHM/cPanel to Kubernetes, from CSF firewalls to WireGuard VPNs—I operate mission-critical systems with a focus on reliability, automation, and security. My approach is methodical: understand the root cause, build the right solution, document everything.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">Research Publications</span></div>
+            <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+            <div class="stat"><span class="stat-num">2</span><span class="stat-label">Countries Served</span></div>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">binayak@cloud:~</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+              <div class="t-line t-output">Binayak Kumar Mahato</div>
+              <div class="t-line"><span class="t-prompt">$</span> cat role.txt</div>
+              <div class="t-line t-output">Cloud & DevOps Engineer</div>
+              <div class="t-line"><span class="t-prompt">$</span> uptime</div>
+              <div class="t-line t-output">3+ years, 0 major incidents</div>
+              <div class="t-line"><span class="t-prompt">$</span> cat skills.json | jq '.top[]'</div>
+              <div class="t-line t-output">"AWS" "Kubernetes" "Linux"</div>
+              <div class="t-line t-output">"Docker" "Terraform" "WHM"</div>
+              <div class="t-line"><span class="t-prompt">$</span> echo $STATUS</div>
+              <div class="t-line t-output t-green">✓ Available for work</div>
+              <div class="t-line t-blink"><span class="t-prompt">$</span> <span class="t-cursor-blink">█</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-label">// 02 &nbsp; Skills</div>
+      <h2 class="section-heading center">Technical Arsenal</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card" data-delay="0">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud Platforms</h3>
+          <div class="skill-tags">
+            <span>AWS EC2</span><span>S3</span><span>Route53</span>
+            <span>VPC</span><span>IAM</span><span>GCP</span><span>Azure</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="100">
+          <div class="skill-icon">🐧</div>
+          <h3>Operating Systems</h3>
+          <div class="skill-tags">
+            <span>AlmaLinux</span><span>CloudLinux</span><span>Ubuntu</span>
+            <span>CentOS</span><span>Windows Server 2019</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="200">
+          <div class="skill-icon">🏗️</div>
+          <h3>Hosting & Infra</h3>
+          <div class="skill-tags">
+            <span>WHM/cPanel</span><span>DirectAdmin</span><span>Hetzner</span>
+            <span>Proxmox</span><span>Cloudflare</span><span>VPS</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="300">
+          <div class="skill-icon">⚙️</div>
+          <h3>DevOps & Automation</h3>
+          <div class="skill-tags">
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+            <span>GitHub Actions</span><span>GitLab CI/CD</span><span>Jenkins</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="400">
+          <div class="skill-icon">🔒</div>
+          <h3>Security & Networking</h3>
+          <div class="skill-tags">
+            <span>CSF Firewall</span><span>Sophos</span><span>OpenVPN</span>
+            <span>WireGuard</span><span>SSL/TLS</span><span>fail2ban</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="500">
+          <div class="skill-icon">📧</div>
+          <h3>Mail Systems</h3>
+          <div class="skill-tags">
+            <span>Postfix</span><span>Exim</span><span>Modoboa</span>
+            <span>Exchange 2019</span><span>SPF</span><span>DKIM</span><span>DMARC</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="600">
+          <div class="skill-icon">💻</div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>Bash</span><span>PowerShell</span>
+            <span>C++</span><span>Java</span><span>JSP</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-delay="700">
+          <div class="skill-icon">📊</div>
+          <h3>Monitoring & Backup</h3>
+          <div class="skill-tags">
+            <span>Veeam</span><span>Proxmox</span><span>Server Hardening</span>
+            <span>Disaster Recovery</span><span>Audits</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-label">// 03 &nbsp; Experience</div>
+      <h2 class="section-heading">Work History</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Cloud Engineer — IT Support</h3>
+                <div class="timeline-company">Bisup Innovation <span class="remote-badge">Remote · USA</span></div>
+              </div>
+              <div class="timeline-date">Nov 2025 – Present</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Managed production-grade cloud infrastructure on AWS and Hetzner dedicated servers</li>
+              <li>Designed and maintained Proxmox virtualization environments and full VPS lifecycle management</li>
+              <li>Configured routed public IP networking and secure WireGuard VPN tunnels</li>
+              <li>Administered WHM/cPanel, DirectAdmin, and CloudLinux for multi-tenant hosting</li>
+              <li>Deployed and maintained mail servers (Postfix, Exim, Modoboa) with SPF, DKIM, DMARC</li>
+              <li>Implemented CSF, fail2ban firewall security and server hardening best practices</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>AWS</span><span>Hetzner</span><span>Proxmox</span><span>WHM/cPanel</span><span>WireGuard</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>IT Engineer – Cloud, Systems & Security</h3>
+                <div class="timeline-company">App and Website LLC <span class="remote-badge">Remote · Australia</span></div>
+              </div>
+              <div class="timeline-date">Jul 2025 – Oct 2025</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Managed Windows and Linux servers ensuring high availability, security, and performance</li>
+              <li>Administered Microsoft Exchange Server 2019, RDS, and Active Directory environments</li>
+              <li>Implemented Sophos Firewall, VPNs, and secure network routing</li>
+              <li>Designed backup and disaster recovery strategies using Veeam</li>
+              <li>Automated administrative tasks using PowerShell and Bash scripts</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Exchange 2019</span><span>Sophos</span><span>Veeam</span><span>Active Directory</span><span>PowerShell</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Cloud Engineer & IT Support</h3>
+                <div class="timeline-company">Bisup Innovation / BisupHost <span class="remote-badge">Remote · USA</span></div>
+              </div>
+              <div class="timeline-date">Nov 2024 – Apr 2025</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Built and operated production hosting infrastructure using WHM/cPanel, DirectAdmin, CloudLinux</li>
+              <li>Deployed and maintained AWS and Hetzner VPS and dedicated servers with security hardening</li>
+              <li>Integrated CI/CD pipelines using GitHub Actions and GitLab CI/CD</li>
+              <li>Resolved real-world issues including resource abuse, 503/403 errors, and outbound port blocks</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>CloudLinux</span><span>GitHub Actions</span><span>GitLab CI/CD</span><span>Cloudflare</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot timeline-dot-sm"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>System Administrator Intern</h3>
+                <div class="timeline-company">Deerwalk Institute of Technology <span class="remote-badge">Kathmandu, Nepal</span></div>
+              </div>
+              <div class="timeline-date">Nov 2021 – May 2022</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Assisted with institutional IT infrastructure and server maintenance</li>
+              <li>Configured and troubleshot Cisco switches and access points</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Cisco</span><span>Networking</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-label">// 04 &nbsp; Projects</div>
+      <h2 class="section-heading center">Key Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-number">01</div>
+          <div class="project-glow"></div>
+          <h3>Proxmox Virtualization Infrastructure</h3>
+          <p>Designed and deployed a full virtualization-based VPS hosting platform using Proxmox VE on a dedicated server, supporting multiple isolated VM environments with automated provisioning.</p>
+          <ul class="project-highlights">
+            <li>Built Proxmox cluster hosting multiple isolated VPS environments</li>
+            <li>Cloud-init templates for automated VM provisioning (SSH keys, networking)</li>
+            <li>Bridged and routed networking with multiple public IPs per VM</li>
+            <li>WireGuard VPN + nftables firewall integration</li>
+            <li>CPU, RAM, and disk optimization across virtualized environments</li>
+          </ul>
+          <div class="project-tags">
+            <span>Proxmox VE</span><span>WireGuard</span><span>nftables</span><span>cloud-init</span><span>Bash</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">02</div>
+          <h3>CI/CD Pipeline Automation</h3>
+          <p>Built production-grade CI/CD pipelines integrating multiple tools across the DevOps lifecycle for automated testing, building, and deployment.</p>
+          <div class="project-tags">
+            <span>GitHub Actions</span><span>GitLab CI/CD</span><span>Jenkins</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">03</div>
+          <h3>Scalable VPS & Hosting Infrastructure</h3>
+          <p>Designed and managed multi-client hosting platforms with enterprise-grade security, DNS management, and automated backup strategies.</p>
+          <div class="project-tags">
+            <span>WHM/cPanel</span><span>CloudLinux</span><span>Cloudflare</span><span>SSL</span><span>CSF</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-number">04</div>
+          <h3>Inventory Management System</h3>
+          <p>Developed a terminal-based C++ system supporting full CRUD operations, billing workflows, and reporting — built for reliability and speed.</p>
+          <div class="project-tags">
+            <span>C++</span><span>OOP</span><span>File I/O</span><span>CLI</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section class="section" id="publications">
+    <div class="container">
+      <div class="section-label">// 05 &nbsp; Publications</div>
+      <h2 class="section-heading">Research Work</h2>
+      <div class="pub-list">
+
+        <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <div class="pub-venue">EPC UUNiT</div>
+            <h3>Security Analysis of Post-Quantum Cryptographic Protocols Against Emerging Quantum Threats</h3>
+            <p>An in-depth analysis of cryptographic protocols designed to withstand quantum computing attacks and their implications for modern secure infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-year">2025</div>
+          <div class="pub-body">
+            <div class="pub-venue">YMER Journal</div>
+            <h3>Optimizing DevOps Processes: A Practical Framework for CI/CD Pipeline Design and Deployment</h3>
+            <p>A practical, battle-tested framework for designing and deploying efficient CI/CD pipelines based on real production environments.</p>
+          </div>
+        </div>
+
+        <div class="pub-card">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <div class="pub-venue">IEEE</div>
+            <h3>Algorithmic Analysis and Implementation Strategies for Targeted Advertising on Diverse Social Media Platforms</h3>
+            <p>An IEEE-published analysis of algorithmic strategies and their implementation across social media ecosystems for targeted content delivery.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section section-dark" id="certs">
+    <div class="container">
+      <div class="section-label">// 06 &nbsp; Certifications</div>
+      <h2 class="section-heading center">Certifications</h2>
+      <div class="certs-grid">
+        <div class="cert-card"><span class="cert-icon">☁️</span><span>Cloud Computing: A Hands-on Approach with AWS</span><span class="cert-year">2024</span></div>
+        <div class="cert-card"><span class="cert-icon">🌐</span><span>Google Cloud Study Jam – SkillBoost</span><span class="cert-year">2023–24</span></div>
+        <div class="cert-card"><span class="cert-icon">🐧</span><span>Linux: I/O Redirection for DevOps</span><span class="cert-year">2024</span></div>
+        <div class="cert-card"><span class="cert-icon">🔐</span><span>Tata Cybersecurity Analyst – Forage</span><span class="cert-year">2024</span></div>
+        <div class="cert-card"><span class="cert-icon">🌿</span><span>Introduction to Git and GitHub</span><span class="cert-year">2021</span></div>
+        <div class="cert-card"><span class="cert-icon">🤖</span><span>Machine Learning – SkillUp</span><span class="cert-year">2023</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-container">
+      <div class="section-label">// 07 &nbsp; Contact</div>
+      <h2 class="section-heading">Let's Build Something.</h2>
+      <p class="contact-sub">Open to Cloud, DevOps, and Infrastructure roles. Let's talk.</p>
+      <div class="contact-grid">
+        <a href="mailto:binayakmahato01@gmail.com" class="contact-card">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">binayakmahato01@gmail.com</div>
+        </a>
+        <a href="tel:+9779809656814" class="contact-card">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+977 9809656814</div>
+        </a>
+        <a href="https://linkedin.com/in/binayak-kumar-mahato" target="_blank" class="contact-card">
+          <div class="contact-icon">💼</div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">binayak-kumar-mahato</div>
+        </a>
+        <a href="https://github.com/Binayak72" target="_blank" class="contact-card">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">Binayak72</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">BKM<span class="accent">_</span></span>
+      <span>© 2025 Binayak Kumar Mahato. Built with Node.js & ❤️</span>
+      <span>Kathmandu, Nepal 🇳🇵</span>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
